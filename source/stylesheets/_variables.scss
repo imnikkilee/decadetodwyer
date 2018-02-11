@@ -1,0 +1,30 @@
+// Colors
+$colorInk: #000;
+$colorFadedInk: rgba($colorInk, .6);
+$colorPaper: #fff;
+
+$colorPrimary: #0BAAB0;
+$colorSecondary: #FA7A79;
+
+$colorPrimaryLight: #B6E6E8;
+$colorPrimaryFaint: #DBF3F4;
+$colorSecondaryLight: #FDC9C8;
+$colorSecondaryFaint: #FFEBEB;
+
+// Space Units
+$space: 16;
+$spacePx: 16px;
+
+$siteWidth: 1400px;
+$siteWidthLg: 1480px;
+
+// Fonts
+$fontBody: "Merriweather", Arial, sans-serif;
+$fontDisplay: "Dancing Script", script;
+
+// Navigation Height
+$mobileNavHeight: 50px;
+$desktopNavHeight: 60px;
+
+// Box Shadow
+$navShadow: 0px 2px 10px rgba($colorInk, .1);

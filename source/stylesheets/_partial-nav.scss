@@ -1,0 +1,100 @@
+.Nav {
+
+  // CSS Magic to show a menu toggle button
+  // on small screens only.
+
+  #menu {
+    display: none;
+  }
+
+  input[type="checkbox"].show-menu-input {
+    display: none;
+
+    &:checked ~ #menu {
+      display: block;
+    }
+  }
+
+  @include respond-to(medium-screen) {
+    #menu {
+      display: flex;
+    }
+
+    input[type="checkbox"].show-menu-input,
+    .show-menu-btn {
+      display: none;
+    }
+  }
+
+  // Visual styles
+  position: fixed;
+  background: $colorPaper;
+  box-shadow: $navShadow;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+
+  .nav-inner-wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    height: $mobileNavHeight;
+
+    @include respond-to(medium-screen) {
+      height: $desktopNavHeight;
+    }
+  }
+
+  .logo-link {
+    text-decoration: none;
+    color: $colorSecondary;
+    font: 700 px-to-rem(24) $fontDisplay;
+
+    @include respond-to(medium-screen) {
+      font-size: px-to-rem(32);
+    }
+  }
+
+  .show-menu-btn {
+    color: $colorPrimary;
+    cursor: pointer;
+  }
+
+  .nav-list {
+    background: $colorPaper;
+    box-shadow: $navShadow;
+    padding: $spacePx * .5 $spacePx;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: $mobileNavHeight;
+  }
+
+  .nav-item {
+    margin: 0 0 $spacePx * .5;
+
+    &.coming-soon {
+      font-style: italic;
+    }
+  }
+
+  .nav-link {
+    color: $colorPrimary;
+    text-decoration: none;
+  }
+
+  @include respond-to(medium-screen) {
+    .nav-list {
+      position: relative;
+      top: auto;
+      right: auto;
+      box-shadow: none;
+      background: none;
+    }
+
+    .nav-item {
+      margin: 0 0 0 $spacePx;
+    }
+  }
+}

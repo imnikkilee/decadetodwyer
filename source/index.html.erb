@@ -2,18 +2,145 @@
 title: Decade to Dwyer
 ---
 
-<div class="splash">
-  <div class="splashImageContainer">
-    <%= image_tag "engagement.jpg", :class => "splashImage" %>
-  </div>
-  <div class="splashTextContainer">
-    <div class="maxWidth">
-      <div class="splashTextContent">
-        <h1>Concetta &amp; Brian</h1>
-        <h2>are getting married</h2>
-        <h3>May 19, 2018<br/>Broad Brook, CT</h3>
-        <p>Please check back here soon for details regarding accommodations, directions, and more.</p>
+<%= partial "nav" %>
+
+<div class="site-content-wrapper">
+  <header class="Intro max-width-container" id="intro-section">
+    <img src="images/concetta-and-brian.png" alt="Concetta & Brian" class="intro-img" />
+    <div class="intro-text-wrapper">
+      <img src="images/icon-rings.png" alt="Wedding Rings" class="intro-text-icon"/>
+      <h1>
+        <strong class="names">Concetta &amp; Brian</strong>
+        <span class="tagline">are getting married</span>
+      </h1>
+      <h3>May 19th, 2018</h3>
+      <p class="location">Broad Brook, Connecticut</p>
+    </div>
+  </header>
+
+  <section class="Timeline" id="timeline-section">
+    <div class="max-width-container">
+      <h2>Decade to Dwyer...</h2>
+      <ul class="timeline-list">
+        <li class="timeline-item">
+          <h3>1999</h3>
+          <div class="timeline-icon-container">
+            <img src="images/icon-karate.png" alt="Karate Belt"/>
+          </div>
+          <p>Concetta and Brian met for the first time at karate class in 4th grade.</p>
+        </li>
+        <li class="timeline-item">
+          <h3>2004</h3>
+          <div class="timeline-icon-container">
+            <img src="images/icon-window.png" alt="Window" class="window"/>
+          </div>
+          <p>Concetta asked Brian if he would jump out of the homeroom window with her on the last day of 8th grade because “it was on the 1st floor and I always wanted to.” He did, and they were friends ever since.</p>
+        </li>
+        <li class="timeline-item">
+          <h3>2005</h3>
+          <div class="timeline-icon-container">
+            <img src="images/icon-broken-heart.png" alt="Broken Heart"/>
+          </div>
+          <p>They dated for a few months sophomore year of high school, but then decided to just remain friends. And friends they did remain!</p>
+        </li>
+        <li class="timeline-item">
+          <h3>2008</h3>
+          <div class="timeline-icon-container">
+            <img src="images/icon-birds.png" alt="Kiss"/>
+          </div>
+          <p>The summer before college, they shared a few dates and kisses. In the car ride home one night, Brian asked Concetta about the status of their relationship. To which Concetta simply replied “I dunno” and slipped out of the car.</p>
+        </li>
+        <li class="timeline-item decade">
+          <h3>2008</h3>
+          <div class="timeline-icon-container">
+            <img src="images/icon-aim-blue.png" alt="AIM" />
+          </div>
+          <p>They both started at Uconn in the fall, and “immediately started dating.” On one of their first days on campus, after hanging out with Brian and some other mutual friends, Concetta returned to her own dorm room and promptly hopped online to officially ask Brian out over AIM. He accepted, and the rest is history.</p>
+        </li>
+        <li class="timeline-item">
+          <h3>2012</h3>
+          <div class="timeline-icon-container">
+            <img src="images/icon-graduation.png" alt="Graduation Cap" />
+          </div>
+          <p>The happy couple graduated Uconn together, but didn’t go to eachothers’ ceremonies because “who really wants to sit through two Uconn graduation ceremonies?”</p>
+        </li>
+        <li class="timeline-item">
+          <h3>2015</h3>
+          <div class="timeline-icon-container">
+            <img src="images/icon-boxes.png" alt="Moving Boxes" />
+          </div>
+          <p>Moved in together and experienced what could quite possibly be the fastest and smoothest moving day ever recorded in human history. They had a small army of 12 friends helping, and were moved in and half unpacked in under 1.5 hours. Wow.</p>
+        </li>
+        <li class="timeline-item">
+          <h3>2016</h3>
+          <div class="timeline-icon-container">
+            <img src="images/icon-engaged.png" alt="Engaged in North Dakota"/>
+          </div>
+          <p>A fun fact about Concetta is that she’s been to 45 46 out of 50 states. In 2016, Concetta and Brian planned a trip to North Dakota as that was one of the 5 she hadn’t been to yet. While visiting one of the national parks, Brian proposed! You of course already know what she said!</p>
+        </li>
+        <li class="timeline-item decade">
+          <h3>2018</h3>
+          <div class="timeline-icon-container">
+            <img src="images/icon-rings-blue.png" alt="Wedding Rings" />
+          </div>
+          <p>After a decade of dating, Concetta and Brian will say “I do” and become The Dwyers on May 19th, 2018.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="Party" id="party-section">
+    <h2>The Bridal Party</h2>
+    <div class="bride">
+      <div class="member honor">
+        <img src="images/party-tina.png" alt="Tina Worden" />
+        <h3>Tina Worden</h3>
+      </div>
+      <div class="member">
+        <img src="images/party-kristina.png" alt="Kristina Hopkins" />
+        <h3>Kristina Hopkins</h3>
+      </div>
+      <div class="member">
+        <img src="images/party-laura.png" alt="Laura Sangster" />
+        <h3>Laura Sangster</h3>
+      </div>
+      <div class="member">
+        <img src="images/party-nikki.png" alt="Nikki Lee Olsen" />
+        <h3>Nikki Lee Olsen</h3>
+      </div>
+      <div class="member">
+        <img src="images/party-sarah.png" alt="Sarah Dwyer" />
+        <h3>Sarah Dwyer</h3>
       </div>
     </div>
-  </div>
+    <div class="groom">
+      <div class="member honor">
+        <img src="images/party-gil.png" alt="Gil Dionne" />
+        <h3>Gil Dionne</h3>
+      </div>
+      <div class="member">
+        <img src="images/party-sam.png" alt="Sam Hopkins" />
+        <h3>Sam Hopkins</h3>
+      </div>
+      <div class="member">
+        <img src="images/party-pete.png" alt="Pete Dufner" />
+        <h3>Pete Dufner</h3>
+      </div>
+      <div class="member">
+        <img src="images/party-matt.png" alt="Matt Dufner" />
+        <h3>Matt Dufner</h3>
+      </div>
+      <div class="member">
+        <img src="images/party-dan.png" alt="Dan Beach" />
+        <h3>Dan Beach</h3>
+      </div>
+    </div>
+  </section>
+
+  <!--
+  <section class="Wedding" id="wedding-section">
+  </section>
+
+  <section class="Accommodations" id="accommodations-section">
+  </section>-->
 </div>

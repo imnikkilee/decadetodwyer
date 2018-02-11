@@ -1,0 +1,18 @@
+@mixin maxWidthContainer {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 $spacePx;
+  width: 100%;
+
+  @include respond-to(medium-screen) {
+    padding: 0 $spacePx * 1.5;
+  }
+
+  @include respond-to(large-screen) {
+    padding: 0 $spacePx * 2;
+  }
+}
+
+.max-width-container {
+  @include maxWidthContainer;
+}
