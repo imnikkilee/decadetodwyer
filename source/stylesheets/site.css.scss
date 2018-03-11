@@ -469,41 +469,15 @@ h2 {
       font: 700 px-to-rem(24) $fontDisplay;
       color: $colorSecondary;
       text-align: center;
-
-      @include respond-to(small-screen) {
-        font-size: px-to-rem(28);
-      }
+      max-width: 550px;
+      margin: $spacePx * 2 auto 0;
 
       @include respond-to(large-screen) {
-        font-size: px-to-rem(32);
+        margin: $spacePx * 4 auto 0;
       }
 
-      @include respond-to(xlarge-screen) {
-        font-size: px-to-rem(40);
-      }
-    }
-
-    h4 {
-      font-size: px-to-rem(14);
-      color: $colorSecondary;
-
-      @include respond-to(small-screen) {
-        font-size: px-to-rem(16);
-      }
-    }
-
-    p {
-      font-style: italic;
-      margin: $spacePx * 1.5 0 $spacePx;
-
-      a,
-      a:visited {
-        color: $colorFadedInk;
-        text-decoration: underline;
-
-        &:hover {
-          color: $colorSecondary;
-        }
+      strong {
+        color: $colorPrimary;
       }
     }
 
@@ -530,6 +504,51 @@ h2 {
 
       @include respond-to(medium-screen) {
         width: 50%;
+      }
+    }
+
+    .details-col {
+      h3 {
+        font: 700 px-to-rem(24) $fontDisplay;
+        color: $colorSecondary;
+        text-align: center;
+        margin: 0 auto;
+
+        @include respond-to(small-screen) {
+          font-size: px-to-rem(28);
+        }
+
+        @include respond-to(large-screen) {
+          font-size: px-to-rem(32);
+        }
+
+        @include respond-to(xlarge-screen) {
+          font-size: px-to-rem(40);
+        }
+      }
+
+      h4 {
+        font-size: px-to-rem(14);
+        color: $colorSecondary;
+
+        @include respond-to(small-screen) {
+          font-size: px-to-rem(16);
+        }
+      }
+
+      p {
+        font-style: italic;
+        margin: $spacePx * 1.5 0 $spacePx;
+
+        a,
+        a:visited {
+          color: $colorFadedInk;
+          text-decoration: underline;
+
+          &:hover {
+            color: $colorSecondary;
+          }
+        }
       }
     }
   }
