@@ -437,3 +437,210 @@ h2 {
     }
   }
 }
+
+// Wedding Details section
+.Wedding {
+  background: $colorSecondaryFaint;
+  background: rgba($colorSecondary, .15);
+  padding-top: $spacePx * 2;
+  padding-bottom: $spacePx * 2;
+
+  @include respond-to(medium-screen) {
+    padding-top: $spacePx * 4;
+    padding-bottom: $spacePx * 4;
+  }
+
+  @include respond-to(large-screen) {
+    padding-top: $spacePx * 6;
+    padding-bottom: $spacePx * 6;
+  }
+
+  .max-width-container {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+
+    h2 {
+      width: 100%;
+      color: $colorSecondary;
+    }
+
+    h3 {
+      font: 700 px-to-rem(24) $fontDisplay;
+      color: $colorSecondary;
+      text-align: center;
+
+      @include respond-to(small-screen) {
+        font-size: px-to-rem(28);
+      }
+
+      @include respond-to(large-screen) {
+        font-size: px-to-rem(32);
+      }
+
+      @include respond-to(xlarge-screen) {
+        font-size: px-to-rem(40);
+      }
+    }
+
+    h4 {
+      font-size: px-to-rem(14);
+      color: $colorSecondary;
+
+      @include respond-to(small-screen) {
+        font-size: px-to-rem(16);
+      }
+    }
+
+    p {
+      font-style: italic;
+      margin: $spacePx * 1.5 0 $spacePx;
+
+      a,
+      a:visited {
+        color: $colorFadedInk;
+        text-decoration: underline;
+
+        &:hover {
+          color: $colorSecondary;
+        }
+      }
+    }
+
+    .img-col {
+      width: 100%;
+
+      @include respond-to(medium-screen) {
+        width: 50%;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        max-width: 650px;
+        margin: 0 auto;
+        position: relative;
+        z-index: -1;
+      }
+    }
+
+    .details-col {
+      width: 100%;
+      text-align: center;
+
+      @include respond-to(medium-screen) {
+        width: 50%;
+      }
+    }
+  }
+}
+
+// Accommodations Section
+.Accommodations {
+  padding-top: $spacePx * 2;
+  padding-bottom: $spacePx * 2;
+
+  @include respond-to(medium-screen) {
+    padding-top: $spacePx * 4;
+    padding-bottom: $spacePx * 4;
+  }
+
+  @include respond-to(large-screen) {
+    padding-top: $spacePx * 6;
+    padding-bottom: $spacePx * 6;
+  }
+
+  .details-col {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  h3 {
+    font: 700 px-to-rem(24) $fontDisplay;
+    color: $colorPrimary;
+
+    @include respond-to(small-screen) {
+      font-size: px-to-rem(28);
+    }
+
+    @include respond-to(large-screen) {
+      font-size: px-to-rem(32);
+    }
+
+    @include respond-to(xlarge-screen) {
+      font-size: px-to-rem(40);
+    }
+  }
+
+  h4 {
+    font-size: px-to-rem(14);
+    color: $colorPrimary;
+
+    @include respond-to(small-screen) {
+      font-size: px-to-rem(16);
+    }
+  }
+
+  h5 {
+    font-size: px-to-rem(10);
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    margin-bottom: $spacePx * .5;
+  }
+
+  p {
+    font-style: italic;
+    margin: 0 auto;
+    max-width: 350px;
+
+    strong {
+      font-weight: bold;
+      color: $colorSecondary;
+    }
+
+    a,
+    a:visited {
+      color: $colorFadedInk;
+      text-decoration: underline;
+
+      &:hover {
+        color: $colorPrimary;
+      }
+    }
+  }
+
+  .hotel {
+    margin: $spacePx * 1.5 0;
+  }
+
+  .instructions {
+    background: $colorPrimaryFaint;
+    border: 1px solid rgba($colorPrimary, .3);
+    padding: $spacePx * 1.5;
+    margin-top: $spacePx * 1.5;
+
+    p strong {
+      color: $colorPrimary;
+    }
+
+    @include respond-to(medium-screen) {
+      display: flex;
+
+      .instructions-one {
+        width: 50%;
+        margin: 0 $spacePx * .75 0 0;
+      }
+
+      .instructions-two {
+        width: 50%;
+        margin: 0 0 0 $spacePx * .75;
+      }
+    }
+  }
+
+  .instructions-one {
+    margin-bottom: $spacePx * 1.5;
+  }
+}
